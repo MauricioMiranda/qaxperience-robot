@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230213 11:56:39.306" rpa="false" schemaversion="3">
+<suite id="s1" name="Qaxperience-Robot" source="C:\Automação\qaxperience-robot">
+<suite id="s1-s1" name="Tests" source="C:\Automação\qaxperience-robot\tests">
+<suite id="s1-s1-s1" name="Cadastro Tests" source="C:\Automação\qaxperience-robot\tests\cadastro_tests.robot">
+<test id="s1-s1-s1-t1" name="Login com sucesso" line="9">
+<kw name="Abrir navegador" library="Base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230213 11:56:39.497" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230213 11:56:39.497" endtime="20230213 11:56:40.638"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230213 11:56:40.638" endtime="20230213 11:56:40.752"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:39.496" endtime="20230213 11:56:40.752"/>
+</kw>
+<kw name="Acessar a página de login do site" library="Base">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230213 11:56:40.753" level="INFO">Opening url 'https://play.qaxperience.com/'</msg>
+<status status="PASS" starttime="20230213 11:56:40.753" endtime="20230213 11:56:41.688"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:40.753" endtime="20230213 11:56:41.688"/>
+</kw>
+<kw name="Inserir e-mail existente" library="cadastro_actions">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="user_email"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230213 11:56:41.689" endtime="20230213 11:56:41.708"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>E-mail</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230213 11:56:41.718" level="INFO">Current page contains text 'E-mail'.</msg>
+<status status="PASS" starttime="20230213 11:56:41.708" endtime="20230213 11:56:41.718"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="user_email"]</arg>
+<arg>mauriciodesouzamiranda@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230213 11:56:41.720" level="INFO">Typing text 'mauriciodesouzamiranda@gmail.com' into text field 'xpath://*[@id="user_email"]'.</msg>
+<status status="PASS" starttime="20230213 11:56:41.718" endtime="20230213 11:56:41.782"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:41.688" endtime="20230213 11:56:41.782"/>
+</kw>
+<kw name="Inserir senha correta" library="cadastro_actions">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="user_password"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230213 11:56:41.783" endtime="20230213 11:56:41.796"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>E-mail</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230213 11:56:41.803" level="INFO">Current page contains text 'E-mail'.</msg>
+<status status="PASS" starttime="20230213 11:56:41.796" endtime="20230213 11:56:41.803"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="user_password"]</arg>
+<arg>M@druga123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230213 11:56:41.804" level="INFO">Typing text 'M@druga123' into text field 'xpath://*[@id="user_password"]'.</msg>
+<status status="PASS" starttime="20230213 11:56:41.803" endtime="20230213 11:56:41.847"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:41.782" endtime="20230213 11:56:41.847"/>
+</kw>
+<kw name="Clicar no botão &quot;login&quot;" library="cadastro_actions">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="new_user"]/div[3]/input</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230213 11:56:41.848" endtime="20230213 11:56:41.860"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230213 11:56:41.870" level="INFO">Current page contains text 'login'.</msg>
+<status status="PASS" starttime="20230213 11:56:41.860" endtime="20230213 11:56:41.870"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="new_user"]/div[3]/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230213 11:56:41.871" level="INFO">Clicking button 'xpath://*[@id="new_user"]/div[3]/input'.</msg>
+<status status="PASS" starttime="20230213 11:56:41.871" endtime="20230213 11:56:43.089"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:41.847" endtime="20230213 11:56:43.089"/>
+</kw>
+<kw name="Verificar mensagem &quot;Login efetuado com sucesso.&quot;" library="cadastro_actions">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login efetuado com sucesso.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230213 11:56:43.100" level="INFO">Current page contains text 'Login efetuado com sucesso.'.</msg>
+<status status="PASS" starttime="20230213 11:56:43.090" endtime="20230213 11:56:43.101"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:43.090" endtime="20230213 11:56:43.101"/>
+</kw>
+<kw name="fechar navegador" library="Base" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230213 11:56:43.102" endtime="20230213 11:56:45.171"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:43.101" endtime="20230213 11:56:45.171"/>
+</kw>
+<doc>Esse teste verifica se o site está logando
+com sucesso.</doc>
+<tag>login</tag>
+<tag>sucesso</tag>
+<status status="PASS" starttime="20230213 11:56:39.495" endtime="20230213 11:56:45.172"/>
+</test>
+<test id="s1-s1-s1-t2" name="Login com falha" line="19">
+<kw name="Abrir navegador" library="Base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230213 11:56:45.177" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230213 11:56:45.177" endtime="20230213 11:56:46.156"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230213 11:56:46.157" endtime="20230213 11:56:46.272"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:45.176" endtime="20230213 11:56:46.272"/>
+</kw>
+<kw name="Acessar a página de login do site" library="Base">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230213 11:56:46.274" level="INFO">Opening url 'https://play.qaxperience.com/'</msg>
+<status status="PASS" starttime="20230213 11:56:46.273" endtime="20230213 11:56:47.204"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:46.273" endtime="20230213 11:56:47.204"/>
+</kw>
+<kw name="Inserir e-mail inexistente" library="cadastro_actions">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="user_email"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230213 11:56:47.205" endtime="20230213 11:56:47.223"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>E-mail</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230213 11:56:47.232" level="INFO">Current page contains text 'E-mail'.</msg>
+<status status="PASS" starttime="20230213 11:56:47.223" endtime="20230213 11:56:47.233"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="user_email"]</arg>
+<arg>34dfgdfg435h5r56y5h54g4@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230213 11:56:47.234" level="INFO">Typing text '34dfgdfg435h5r56y5h54g4@gmail.com' into text field 'xpath://*[@id="user_email"]'.</msg>
+<status status="PASS" starttime="20230213 11:56:47.233" endtime="20230213 11:56:47.280"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:47.205" endtime="20230213 11:56:47.280"/>
+</kw>
+<kw name="Inserir senha correta" library="cadastro_actions">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="user_password"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230213 11:56:47.281" endtime="20230213 11:56:47.295"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>E-mail</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230213 11:56:47.302" level="INFO">Current page contains text 'E-mail'.</msg>
+<status status="PASS" starttime="20230213 11:56:47.296" endtime="20230213 11:56:47.302"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="user_password"]</arg>
+<arg>M@druga123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230213 11:56:47.303" level="INFO">Typing text 'M@druga123' into text field 'xpath://*[@id="user_password"]'.</msg>
+<status status="PASS" starttime="20230213 11:56:47.302" endtime="20230213 11:56:47.348"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:47.281" endtime="20230213 11:56:47.348"/>
+</kw>
+<kw name="Clicar no botão &quot;login&quot;" library="cadastro_actions">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="new_user"]/div[3]/input</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230213 11:56:47.349" endtime="20230213 11:56:47.361"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230213 11:56:47.370" level="INFO">Current page contains text 'login'.</msg>
+<status status="PASS" starttime="20230213 11:56:47.361" endtime="20230213 11:56:47.370"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="new_user"]/div[3]/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230213 11:56:47.371" level="INFO">Clicking button 'xpath://*[@id="new_user"]/div[3]/input'.</msg>
+<status status="PASS" starttime="20230213 11:56:47.370" endtime="20230213 11:56:47.824"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:47.348" endtime="20230213 11:56:47.824"/>
+</kw>
+<kw name="Verificar mensagem de erro &quot;E-mail ou senha inválida.&quot;" library="cadastro_actions">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>E-mail ou senha inválida.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230213 11:56:47.860" level="INFO">Current page contains text 'E-mail ou senha inválida.'.</msg>
+<status status="PASS" starttime="20230213 11:56:47.825" endtime="20230213 11:56:47.860"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:47.825" endtime="20230213 11:56:47.861"/>
+</kw>
+<kw name="fechar navegador" library="Base" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230213 11:56:47.862" endtime="20230213 11:56:49.906"/>
+</kw>
+<status status="PASS" starttime="20230213 11:56:47.861" endtime="20230213 11:56:49.907"/>
+</kw>
+<doc>Esse teste verifica se o site está logando
+com e-mail inexistente.</doc>
+<tag>email</tag>
+<tag>inexistente</tag>
+<tag>login</tag>
+<status status="PASS" starttime="20230213 11:56:45.175" endtime="20230213 11:56:49.908"/>
+</test>
+<doc>Teste de login</doc>
+<status status="PASS" starttime="20230213 11:56:39.332" endtime="20230213 11:56:49.910"/>
+</suite>
+<status status="PASS" starttime="20230213 11:56:39.328" endtime="20230213 11:56:49.913"/>
+</suite>
+<status status="PASS" starttime="20230213 11:56:39.309" endtime="20230213 11:56:49.914"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">email</stat>
+<stat pass="1" fail="0" skip="0">inexistente</stat>
+<stat pass="2" fail="0" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">sucesso</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Qaxperience-Robot">Qaxperience-Robot</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Tests">Qaxperience-Robot.Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Cadastro Tests">Qaxperience-Robot.Tests.Cadastro Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
