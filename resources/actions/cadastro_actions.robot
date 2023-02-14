@@ -34,3 +34,11 @@ Inserir e-mail inexistente
 
 Verificar mensagem de erro "E-mail ou senha inválida."
     Page Should Contain                  E-mail ou senha inválida.
+
+Inserir senha incorreta
+    Wait Until Element Is Visible        xpath://*[@id="user_password"]
+    Page Should Contain                  E-mail    
+    Input Text                           xpath://*[@id="user_password"]        12345
+
+Verificar Mensagem de erro "Preencha este campo."
+    Page Should Contain                  Preencha este campo.

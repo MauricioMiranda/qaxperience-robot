@@ -4,6 +4,7 @@ Documentation      Base da documentação
 Library            SeleniumLibrary
 Library            OperatingSystem
 Resource           actions/cadastro_actions.robot
+Resource           actions/conteudo_actions.robot
 
 *** Variables ***
 ${BROWSER}        Chrome
