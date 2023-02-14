@@ -6,7 +6,6 @@ Test Setup           Abrir navegador
 Test Teardown        fechar navegador
 
 *** Test Cases ***
-
 Validar componentes do menu lateral
     [Documentation]    Este teste verificar se todos os componentes 
     ...                estão presentes no menu lateral.
@@ -22,8 +21,8 @@ Validar componentes do menu lateral
     Verificar componete "Minha conta"
 
 Verificar cursos presentes
-    [Documentation]    Este teste verificar se todos os componentes 
-    ...                estão presentes no menu lateral.
+    [Documentation]    Este teste verificar se todos os cursos estão 
+    ...                presentes no site.
     [Tags]    Menu    cursos
     Acessar a página de login do site
     Inserir e-mail existente
