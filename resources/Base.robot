@@ -14,9 +14,12 @@ ${URL}            https://play.qaxperience.com/
 Abrir navegador
     Open Browser                      browser=Chrome
     Maximize Browser Window
+    Go to                             ${URL}
 
-fechar navegador
+Fechar navegador
     Close Browser
 
-Acessar a página de login do site
-    Go to                             ${URL}
+Login com sucesso
+    Inserir e-mail existente
+    Inserir senha correta
+    Clicar no botão "login"

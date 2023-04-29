@@ -25,6 +25,7 @@ Clicar no botão "login"
     Click Button                         xpath://*[@id="new_user"]/div[3]/input
 
 Verificar mensagem "Login efetuado com sucesso."
+    Wait Until Element Is Visible        Login efetuado com sucesso.
     Page Should Contain                  Login efetuado com sucesso.
 
 Inserir e-mail inexistente

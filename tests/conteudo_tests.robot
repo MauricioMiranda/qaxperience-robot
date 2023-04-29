@@ -10,10 +10,7 @@ Validar componentes do menu lateral
     [Documentation]    Este teste verificar se todos os componentes 
     ...                estão presentes no menu lateral.
     [Tags]    Menu    componentes
-    Acessar a página de login do site
-    Inserir e-mail existente
-    Inserir senha correta
-    Clicar no botão "login"
+    Login com sucesso
     Verificar componete "Conteúdos"
     Verificar componete "Ranking"
     Verificar componete "Certificados"
@@ -24,10 +21,7 @@ Verificar cursos presentes
     [Documentation]    Este teste verificar se todos os cursos estão 
     ...                presentes no site.
     [Tags]    Menu    cursos
-    Acessar a página de login do site
-    Inserir e-mail existente
-    Inserir senha correta
-    Clicar no botão "login"
+    Login com sucesso
     Verificar curso "Comece aqui" e descrição
     Verificar curso "Introdução a programação básica em Javascript" e descrição
     Verificar curso "Cypress eXpress" e descrição

@@ -10,17 +10,13 @@ Login com sucesso
     [Documentation]    Esse teste verifica se o site está logando 
     ...                com sucesso.
     [Tags]    login    sucesso
-    Acessar a página de login do site
-    Inserir e-mail existente
-    Inserir senha correta
-    Clicar no botão "login"
+    Login com sucesso
     Verificar mensagem "Login efetuado com sucesso."
 
 Login com e-mail inexistente
     [Documentation]    Esse teste verifica se o site está logando 
     ...                com e-mail inexistente.
     [Tags]    login    email    inexistente
-    Acessar a página de login do site
     Inserir e-mail inexistente
     Inserir senha correta
     Clicar no botão "login"
@@ -30,7 +26,6 @@ Login com senha incorreta
     [Documentation]    Esse teste verifica quando o e-mail é 
     ...                existente
     [Tags]    login    senha    incorreta
-    Acessar a página de login do site
     Inserir e-mail existente
     Inserir senha incorreta
     Clicar no botão "login"
@@ -41,6 +36,5 @@ Clicar no botão "login" sem preencher os campos de e-mail e senha.
     ...                clicando no botão "login" sem preencher os 
     ...                campos de e-mail e senha.
     [Tags]    login    semSenha    semEmail
-    Acessar a página de login do site
     Clicar no botão "login"
     Verificar mensagem de erro "Preencha este campo."
