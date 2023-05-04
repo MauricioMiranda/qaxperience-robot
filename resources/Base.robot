@@ -5,6 +5,7 @@ Library            SeleniumLibrary
 Library            OperatingSystem
 Resource           actions/cadastro_actions.robot
 Resource           actions/conteudo_actions.robot
+Resource           actions/ranking_actions.robot
 
 *** Variables ***
 ${BROWSER}        Chrome

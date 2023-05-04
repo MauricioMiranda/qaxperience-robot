@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Teste de login
+Documentation        Teste de login.
 
 Library              SeleniumLibrary
 
