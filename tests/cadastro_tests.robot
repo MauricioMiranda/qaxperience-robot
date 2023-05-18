@@ -3,7 +3,7 @@ Documentation        Teste de login
 
 Resource             ../resources/Base.robot
 Test Setup           Abrir navegador
-Test Teardown        fechar navegador
+Test Teardown        Fechar navegador
 
 *** Test Cases ***
 Login com sucesso

@@ -5,7 +5,7 @@ Library              SeleniumLibrary
 
 *** Keywords ***
 Clicar no botão "Entrar"
-    Wait Until Element Is Visible        xpath://*[@id="w-node-_90910534-8503-0140-553b-dd5cfa0cbf37-fa0cbf10"]/div[1]/a/div[1]
+    Element Should Be Visible        xpath://*[@id="w-node-_90910534-8503-0140-553b-dd5cfa0cbf37-fa0cbf10"]/div[1]/a/div[1]
     Page Should Contain                  Entrar
     Click Element                        xpath://*[@id="w-node-_90910534-8503-0140-553b-dd5cfa0cbf37-fa0cbf10"]/div[1]/a/div[1]
 
@@ -13,14 +13,14 @@ Inserir e-mail existente
     Wait Until Element Is Visible        xpath://*[@id="user_email"]
     Page Should Contain                  E-mail    
     Input Text                           xpath://*[@id="user_email"]           mauriciodesouzamiranda@gmail.com
-
+    
 Inserir senha correta
-    Wait Until Element Is Visible        xpath://*[@id="user_password"]
+    Element Should Be Visible        xpath://*[@id="user_password"]
     Page Should Contain                  E-mail    
     Input Text                           xpath://*[@id="user_password"]        M@druga123
 
 Clicar no botão "login"
-    Wait Until Element Is Visible        xpath://*[@id="new_user"]/div[3]/input
+    Element Should Be Visible        xpath://*[@id="new_user"]/div[3]/input
     Page Should Contain                  login    
     Click Button                         xpath://*[@id="new_user"]/div[3]/input
 
@@ -37,7 +37,7 @@ Verificar mensagem de erro "E-mail ou senha inválida."
     Page Should Contain                  E-mail ou senha inválida.
 
 Inserir senha incorreta
-    Wait Until Element Is Visible        xpath://*[@id="user_password"]
+    Element Should Be Visible        xpath://*[@id="user_password"]
     Page Should Contain                  E-mail    
     Input Text                           xpath://*[@id="user_password"]        12345
 
